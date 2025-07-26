@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Internship Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Explore Our Internship Categories</h1>
+            <p class="subtitle">Choose your area of interest and start your journey</p>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-controls">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search categories..." class="search-input">
+                </div>
+                <div class="view-toggle">
+                    <button id="gridView" class="view-btn active">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button id="listView" class="view-btn">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid Section -->
+    <main class="main-content">
+        <div class="container">
+            <div class="categories-grid" id="categoriesGrid">
+                
+                <!-- Web Development Card -->
+                <div class="category-card" data-category="web development">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-description">Build modern websites and web applications using HTML, CSS, JavaScript, and popular frameworks.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Graphic Design Card -->
+                <div class="category-card" data-category="graphic design">
+                    <div class="card-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="card-title">Graphic Design</h3>
+                    <p class="card-description">Create stunning visual designs, logos, branding materials, and marketing graphics.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- UI/UX Design Card -->
+                <div class="category-card" data-category="ui ux design">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="card-title">UI/UX Design</h3>
+                    <p class="card-description">Design user-friendly interfaces and create exceptional user experiences for digital products.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Mobile App Development Card -->
+                <div class="category-card" data-category="mobile app development">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Mobile App Development</h3>
+                    <p class="card-description">Develop native and cross-platform mobile applications for iOS and Android devices.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- WordPress Development Card -->
+                <div class="category-card" data-category="wordpress development">
+                    <div class="card-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="card-title">WordPress Development</h3>
+                    <p class="card-description">Create custom WordPress themes, plugins, and develop content management solutions.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Data Science Card -->
+                <div class="category-card" data-category="data science">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-title">Data Science</h3>
+                    <p class="card-description">Analyze complex data, build machine learning models, and extract valuable business insights.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Digital Marketing Card -->
+                <div class="category-card" data-category="digital marketing">
+                    <div class="card-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="card-title">Digital Marketing</h3>
+                    <p class="card-description">Master SEO, social media marketing, content marketing, and online advertising strategies.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Video Editing Card -->
+                <div class="category-card" data-category="video editing">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="card-title">Video Editing</h3>
+                    <p class="card-description">Edit and produce professional videos, motion graphics, and multimedia content.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No categories found</h3>
+                <p>Try adjusting your search terms</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Internship Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
